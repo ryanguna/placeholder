@@ -1,0 +1,31 @@
+Orders
+OrderType
+OrderNumber
+OrderDateTime
+OrderDueDateTime
+KitchenLeadTimeInMinutes
+IsPaid
+
+
+{
+	"Orders" : [{
+		"OrderType" : "Takeout",
+		"OrderNumber" : "1003",
+		"isPaid" : true,
+		"LineItems" : [{
+			"ItemId" : 2241504,
+			"ItemName": "(12) Big Earls",
+			"Quantity" : 1,
+			"UnitPrice" : 29.4,
+			"UnitSellPrice" : 29.4,
+			"ExtendedSellPrice" : 29.4,
+			"Notes" : ["Please check this kind hehehe"]
+		}],
+		"Notes" : ["This is an order note"],
+		"OrderDateTime":"\/Date(1542081480334)\/",
+		"OrderDueDateTime" : "\/Date(1573185651118)\/",
+		"TipAmount" : 1.00
+
+	}],
+	"SourceApplicationName" : "OnlineOrderingApp"
+}
