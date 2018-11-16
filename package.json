@@ -1,0 +1,14 @@
+{
+  "name": "ncr-place-order",
+  "version": "1.0.0",
+  "description": "A place holder handler for lambda",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Ryan Gunawardana",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "axios": "^0.18.0"
+  }
+}
