@@ -12,31 +12,22 @@ module.exports = {
                         'client_secret' : config.NCR_CLIENT_SECRET,
                     }
                 })
-                .then(function(res) {
-                    console.log('SUCCESS', res.data);
-                    resolve(res.data);
-                })
-                .catch(error => {
-                    reject(error);
-                    console.log('ERROR', error.data)
-                });
+                .then((response) => resolve(response.data))
+                .catch(error => reject(error));
         })
     },
-    placeOrder(accessToken){
+    placeOrder(payload, accessToken){
         return new Promise((resolve, reject) => {
-                axios.get('/Stores', {
+                axios.post('/v2/Orders?api_store_id=78308001', payload , {
                     headers: {
                         'Authorization': `Bearer ${accessToken}`,
                     }
                 })
                 .then(function(res) {
-                    console.log('SUCCESS', res.data);
+                    if(res.data.Code >= 400) reject(res.data);
                     resolve(res.data);
                 })
-                .catch(error => {
-                    reject(error);
-                    console.log('ERROR', error.data)
-                });
+                .catch(error => reject(error));
         })
     }
 };

@@ -19,7 +19,7 @@ IsPaid
 			"UnitPrice" : 29.4,
 			"UnitSellPrice" : 29.4,
 			"ExtendedSellPrice" : 29.4,
-			"Notes" : ["Please check this kind hehehe"]
+			"Notes" : ["Please check this kind"]
 		}],
 		"Notes" : ["This is an order note"],
 		"OrderDateTime":"\/Date(1542081480334)\/",
